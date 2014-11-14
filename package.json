@@ -1,0 +1,20 @@
+{
+  "name": "eclipse-website-metrics",
+  "description": "Gather history of web traffic for Eclipse.org IoT projects",
+  "version": "0.1.0",
+  "dependencies": {
+    "bluebird": "*",
+    "google-spreadsheet": "*",
+    "ya-csv": "*",
+    "googleapis": "*",
+    "moment": "*",
+    "edit-google-spreadsheet": "*",
+    "gapitoken": "*"
+  },
+  "licenses": [
+    {
+      "name": "EPL",
+      "url": "https://www.eclipse.org/org/documents/epl-v10.html"
+    }
+  ]
+}
