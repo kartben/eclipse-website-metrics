@@ -22,7 +22,8 @@ var profiles = {
   'paho': 'ga:71389553',
   'om2m': 'ga:86366758',
   'kura': 'ga:92866690',
-  'californium': 'ga:93166606'
+  'californium': 'ga:93166606',
+  'vorto': 'ga:100864100'
 }
 
 var dimensions = [
@@ -141,7 +142,7 @@ getAccessToken(oauth2Client, function() {
       var options = {
         'auth': oauth2Client,
         'ids': profiles[p],
-        'start-date': '2011-11-01',
+        'start-date': '2012-05-01',
         'end-date': moment().format("YYYY-MM-DD"),
         'dimensions': dimensions.join(','),
         'metrics': metrics.join(','),
@@ -166,7 +167,7 @@ getAccessToken(oauth2Client, function() {
         process.exit()
 
       });
-    }, 5000);
+    }, 12000);
 
   });
 
