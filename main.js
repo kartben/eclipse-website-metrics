@@ -92,7 +92,7 @@ function processGAResultsCallback(projectName, spreadsheet) {
 
 var CLIENT_ID = '1097649384357-ub99a5gmnil3lpv3mfr30o6im0phuid9.apps.googleusercontent.com'
 var CLIENT_SECRET = '7HgurxhOVv7BggqYqPr-BTST'
-var REDIRECT_URL = 'http://localhost'
+var REDIRECT_URL = 'urn:ietf:wg:oauth:2.0:oob'
 var SCOPES = ['https://www.googleapis.com/auth/analytics', 'https://www.googleapis.com/auth/analytics.readonly', 'https://spreadsheets.google.com/feeds']
 
 var OAuth2 = google.auth.OAuth2;
