@@ -13,18 +13,12 @@ var readline = require('readline');
 
 
 var profiles = {
-    'iot.eclipse.org': 'ga:63928974',
-    'mihini': 'ga:64239904',
-    'ponte': 'ga:80018159',
-    'eclipsescada': 'ga:82155641',
-    'smarthome': 'ga:92615398',
-    'mosquitto': 'ga:23958822',
-    'paho': 'ga:71389553',
-    'om2m': 'ga:86366758',
-    'kura': 'ga:92866690',
-    'californium': 'ga:93166606',
-    'vorto': 'ga:100864100',
-    '4diac': 'ga:105342197'
+    'amalthea': 'ga:104029712',
+    'science': 'ga:86083423',
+    'openmdm': 'ga:101585406',
+    'locationtech': 'ga:68750342',
+    'iot': 'ga:63928974',
+    'polarsys': 'ga:65388123'
 }
 
 var dimensions = [
@@ -126,9 +120,9 @@ function getAccessToken(oauth2Client, callback) {
 getAccessToken(oauth2Client, function() {
     console.log(oauth2Client.credentials.access_token);
     Spreadsheet.load({
-        debug: false,
-        spreadsheetId: '1MT8vUectDG7qnt83LBts-B7oECMsICXyB4Tn4Kxl64U',
-        worksheetId: 'oc6pmuf',
+        debug: true,
+        spreadsheetId: '1xsmbZLiEbBn8aa6M71CT7eagaUkAVQpObHK1BC2PJhs',
+        worksheetId: 1,
         accessToken: {
             type: 'Bearer',
             token: oauth2Client.credentials.access_token
