@@ -151,7 +151,9 @@ getAccessToken(oauth2Client, function() {
                 'max-results': '10000',
             };
 
-            analytics.data.ga.get(options, processGAResultsCallback(p, spreadsheet));
+//            analytics.data.ga.get(options, processGAResultsCallback(p, spreadsheet));
+            setTimeout(getGAStats(options,p, spreadsheet), Math.random() * 10000) ;
+
         }
 
         setTimeout(function() {
@@ -168,8 +170,17 @@ getAccessToken(oauth2Client, function() {
                 process.exit()
 
             });
-        }, 12000);
+        }, 15000);
 
     });
 
 });
+
+function getGAStats(options, p, spreadsheet) {
+    return function() {
+        analytics.data.ga.get(options, processGAResultsCallback(p, spreadsheet));
+    }
+}
+
+
+
