@@ -25,7 +25,8 @@ var profiles = {
     'californium': 'ga:93166606',
     'vorto': 'ga:100864100',
     '4diac': 'ga:105342197',
-    'concierge': 'ga:108593526'
+    'concierge': 'ga:108593526',
+    'kapua': 'ga:131651563'
 }
 
 var dimensions = [
