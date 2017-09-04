@@ -26,7 +26,8 @@ var profiles = {
     'vorto': 'ga:100864100',
     '4diac': 'ga:105342197',
     'concierge': 'ga:108593526',
-    'kapua': 'ga:131651563'
+    'kapua': 'ga:131651563',
+    'hono': 'ga:139510238'
 }
 
 var dimensions = [
